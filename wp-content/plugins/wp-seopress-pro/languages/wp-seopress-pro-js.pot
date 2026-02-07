@@ -1,0 +1,357 @@
+# Copyright (C) 2023 The SEO Guys at SEOPress
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: SEOPress PRO {VERSION}\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-seopress-pro\n"
+"Last-Translator: SEOPress <contact@seopress.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-06-07T13:57:16+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: wp-seopress-pro\n"
+
+#. Plugin Name of the plugin
+msgid "SEOPress PRO"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.seopress.org/seopress-pro/"
+msgstr ""
+
+#. Description of the plugin
+msgid "The PRO version of SEOPress. SEOPress required (free)."
+msgstr ""
+
+#. Author of the plugin
+msgid "The SEO Guys at SEOPress"
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/edit.js:9
+#: public/editor/blocks/breadcrumbs/index.js:1
+msgid "Example title"
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/edit.js:14
+#: public/editor/blocks/breadcrumbs/index.js:1
+msgid "This is an example of breadcrumbs. View your site as a simple visitor to get the final rendering."
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/index.js:7
+#: public/editor/blocks/breadcrumbs/index.js:1
+msgid "Breadcrumbs"
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/index.js:8
+#: public/editor/blocks/breadcrumbs/index.js:1
+msgid "Display an HTML breadcrumbs."
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/index.js:9
+#: public/editor/blocks/breadcrumbs/index.js:1
+msgid "ariane"
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/index.js:9
+#: public/editor/blocks/breadcrumbs/index.js:1
+msgid "breadcrumbs"
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/index.js:9
+#: public/editor/blocks/breadcrumbs/index.js:1
+msgid "crumbs"
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/index.js:9
+#: public/editor/blocks/breadcrumbs/index.js:1
+msgid "navigation"
+msgstr ""
+
+#: app/editor/blocks/how-to-step/edit.js:34
+#: public/editor/blocks/how-to/index.js:7
+msgid "Type a title"
+msgstr ""
+
+#: app/editor/blocks/how-to-step/edit.js:42
+#: public/editor/blocks/how-to/index.js:7
+msgid "Type a description"
+msgstr ""
+
+#: app/editor/blocks/how-to-step/index.js:8
+#: public/editor/blocks/how-to/index.js:7
+msgid "How To Step"
+msgstr ""
+
+#: app/editor/blocks/how-to-step/index.js:9
+#: public/editor/blocks/how-to/index.js:7
+msgid "Display a tutorial step."
+msgstr ""
+
+#: app/editor/blocks/how-to/components/AppenderButton.js:13
+#: public/editor/blocks/how-to/index.js:7
+msgid "Add step"
+msgstr ""
+
+#. translators: %1$s: Estimated cost
+#: app/editor/blocks/how-to/components/EstimatedCost.js:4
+#: public/editor/blocks/how-to/index.js:8
+msgid "Estimated cost: %1$s"
+msgstr ""
+
+#: app/editor/blocks/how-to/edit.js:109
+#: public/editor/blocks/how-to/index.js:8
+msgid "Type in a tutorial description or introduction"
+msgstr ""
+
+#: app/editor/blocks/how-to/index.js:8
+#: app/editor/blocks/how-to/index.js:10
+#: public/editor/blocks/how-to/index.js:8
+msgid "How to"
+msgstr ""
+
+#: app/editor/blocks/how-to/index.js:9
+#: public/editor/blocks/how-to/index.js:8
+msgid "Display a tutorial block."
+msgstr ""
+
+#: app/editor/blocks/how-to/index.js:10
+#: public/editor/blocks/how-to/index.js:8
+msgid "Tutorial"
+msgstr ""
+
+#. translators: %s: heading level e.g: "1", "2", "3"
+#: app/editor/blocks/how-to/inspector.js:9
+#: app/editor/blocks/table-of-contents/inspector.js:21
+#: public/editor/blocks/how-to/index.js:7
+#: public/editor/blocks/table-of-contents/index.js:3
+msgid "Block settings"
+msgstr ""
+
+#: app/editor/blocks/how-to/inspector.js:12
+#: app/editor/blocks/table-of-contents/inspector.js:24
+#: public/editor/blocks/how-to/index.js:7
+#: public/editor/blocks/table-of-contents/index.js:3
+msgid "Display as unordered list."
+msgstr ""
+
+#: app/editor/blocks/how-to/inspector.js:19
+#: public/editor/blocks/how-to/index.js:7
+msgid "Estimated cost"
+msgstr ""
+
+#: app/editor/blocks/how-to/inspector.js:28
+#: public/editor/blocks/how-to/index.js:7
+msgid "Days"
+msgstr ""
+
+#: app/editor/blocks/how-to/inspector.js:35
+#: public/editor/blocks/how-to/index.js:7
+msgid "Hours"
+msgstr ""
+
+#: app/editor/blocks/how-to/inspector.js:42
+#: public/editor/blocks/how-to/index.js:7
+msgid "Minutes"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/edit.js:10
+#: public/editor/blocks/local-business/index.js:1
+msgid "Street Address"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/edit.js:11
+#: public/editor/blocks/local-business/index.js:1
+msgid "Zipcode"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/edit.js:12
+#: public/editor/blocks/local-business/index.js:1
+msgid "City"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/edit.js:13
+#: public/editor/blocks/local-business/index.js:1
+msgid "State"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/edit.js:14
+#: public/editor/blocks/local-business/index.js:1
+msgid "Country"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/edit.js:15
+#: public/editor/blocks/local-business/index.js:1
+msgid "Phone"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/edit.js:16
+#: public/editor/blocks/local-business/index.js:1
+msgid "Map link"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/edit.js:17
+#: public/editor/blocks/local-business/index.js:1
+msgid "Opening hours"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/FieldSelect.js:7
+#: public/editor/blocks/local-business/index.js:1
+msgid "Select the field to display"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/index.js:8
+#: app/editor/blocks/local-business/index.js:10
+#: public/editor/blocks/local-business/index.js:1
+msgid "Local Business"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/index.js:9
+#: public/editor/blocks/local-business/index.js:1
+msgid "Displays a single Local Business field"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/inspector.js:10
+#: public/editor/blocks/local-business/index.js:1
+msgid "Field settings"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/inspector.js:17
+#: public/editor/blocks/local-business/index.js:1
+msgid "Hide closed days"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/inspector.js:22
+#: public/editor/blocks/local-business/index.js:1
+msgid "Display the field value inline"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/inspector.js:31
+#: public/editor/blocks/local-business/index.js:1
+msgid "Open link in a new tab"
+msgstr ""
+
+#: app/editor/blocks/local-business/edit.js:8
+#: public/editor/blocks/local-business/index.js:1
+msgid "Title"
+msgstr ""
+
+#: app/editor/blocks/local-business/edit.js:9
+#: public/editor/blocks/local-business/index.js:1
+msgid "Description"
+msgstr ""
+
+#: app/editor/blocks/local-business/index.js:11
+#: public/editor/blocks/local-business/index.js:1
+msgid "Displays Local Business information"
+msgstr ""
+
+#: app/editor/blocks/table-of-contents/edit.js:77
+#: public/editor/blocks/table-of-contents/index.js:3
+msgid "Type a title for the block"
+msgstr ""
+
+#: app/editor/blocks/table-of-contents/edit.js:80
+#: public/editor/blocks/table-of-contents/index.js:3
+msgid "The content does not currently contain any heading blocks or no heading levels are selected in the block settings. Please add some headings to your content and adjust block settings for the table of contents to appear."
+msgstr ""
+
+#: app/editor/blocks/table-of-contents/inspector.js:30
+#: public/editor/blocks/table-of-contents/index.js:3
+msgid "Headings to include"
+msgstr ""
+
+#. translators: %1$s: number of days
+#: app/editor/blocks/utils.js:32
+#: public/editor/blocks/how-to/index.js:3
+msgid "%1$s day"
+msgid_plural "%1$s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %1$s: number of hours
+#: app/editor/blocks/utils.js:34
+#: public/editor/blocks/how-to/index.js:5
+msgid "%1$s hour"
+msgid_plural "%1$s hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %1$s: number of minutes
+#: app/editor/blocks/utils.js:36
+#: public/editor/blocks/how-to/index.js:7
+msgid "%1$s minute"
+msgid_plural "%1$s minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/editor/blocks/breadcrumbs/block.json
+#: public/editor/blocks/breadcrumbs/block.json
+msgctxt "block title"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: app/editor/blocks/breadcrumbs/block.json
+#: public/editor/blocks/breadcrumbs/block.json
+msgctxt "block description"
+msgid "Display an HTML breadcrumbs"
+msgstr ""
+
+#: app/editor/blocks/how-to-step/block.json
+#: public/editor/blocks/how-to-step/block.json
+msgctxt "block title"
+msgid "How To Step"
+msgstr ""
+
+#: app/editor/blocks/how-to-step/block.json
+#: public/editor/blocks/how-to-step/block.json
+msgctxt "block description"
+msgid "Display a tutorial step"
+msgstr ""
+
+#: app/editor/blocks/how-to/block.json
+#: public/editor/blocks/how-to/block.json
+msgctxt "block title"
+msgid "How To"
+msgstr ""
+
+#: app/editor/blocks/how-to/block.json
+#: public/editor/blocks/how-to/block.json
+msgctxt "block description"
+msgid "Display a tutorial block"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/block.json
+#: app/editor/blocks/local-business/block.json
+#: public/editor/blocks/local-business-field/block.json
+#: public/editor/blocks/local-business/block.json
+msgctxt "block title"
+msgid "Local Business"
+msgstr ""
+
+#: app/editor/blocks/local-business-field/block.json
+#: public/editor/blocks/local-business-field/block.json
+msgctxt "block description"
+msgid "Displays a single Local Business field"
+msgstr ""
+
+#: app/editor/blocks/local-business/block.json
+#: public/editor/blocks/local-business/block.json
+msgctxt "block description"
+msgid "Displays Local Business information"
+msgstr ""
+
+#: app/editor/blocks/table-of-contents/block.json
+#: public/editor/blocks/table-of-contents/block.json
+msgctxt "block title"
+msgid "Table of Contents"
+msgstr ""
+
+#: app/editor/blocks/table-of-contents/block.json
+#: public/editor/blocks/table-of-contents/block.json
+msgctxt "block description"
+msgid "Creates a table of contents."
+msgstr ""

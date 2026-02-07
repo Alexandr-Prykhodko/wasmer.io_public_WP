@@ -1,0 +1,74 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LuckyWP ACF Menu Field\n"
+"POT-Creation-Date: 2020-05-26 18:51+0300\n"
+"PO-Revision-Date: 2020-05-24 20:49+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: ru\n"
+"X-Poedit-KeywordsList: __;_;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/Plugins.php:16 admin/Plugins.php:23 admin/Plugins.php:24
+#: admin/Plugins.php:62
+msgid "LuckyWP Plugins"
+msgstr ""
+
+#: core/pluginRate/notice.php:10
+msgid "Hello!"
+msgstr ""
+
+#: core/pluginRate/notice.php:14
+#, php-format
+msgid ""
+"We are very pleased that you by now have been using the %s plugin a few "
+"days."
+msgstr ""
+
+#: core/pluginRate/notice.php:18
+msgid "Please rate plugin. It will help us a lot."
+msgstr ""
+
+#: core/pluginRate/notice.php:21
+msgid "Rate the plugin"
+msgstr ""
+
+#: core/pluginRate/notice.php:22
+msgid "Remind later"
+msgstr ""
+
+#: core/pluginRate/notice.php:23
+msgid "Don't show again"
+msgstr ""
+
+#: core/pluginRate/notice.php:26
+msgid "Thank you very much!"
+msgstr ""
+
+#: plugin/AcfMenuField.php:16
+msgid "Menu"
+msgstr ""
+
+#: plugin/AcfMenuField.php:54
+msgid "Navigation menus not exists."
+msgstr ""
+
+#: plugin/AcfMenuField.php:119
+msgid "Menu ID"
+msgstr ""
+
+#: plugin/AcfMenuField.php:120
+msgid "Menu Object"
+msgstr ""
+
+#: plugin/AcfMenuField.php:121
+msgid "Menu HTML"
+msgstr ""

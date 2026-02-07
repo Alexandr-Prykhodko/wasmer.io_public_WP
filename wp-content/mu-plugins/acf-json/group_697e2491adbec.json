@@ -1,0 +1,1054 @@
+{
+    "key": "group_697e2491adbec",
+    "title": "UI Part Builder",
+    "fields": [
+        {
+            "key": "field_697e24915587b",
+            "label": "Part Type",
+            "name": "part_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "header": "Header",
+                "footer": "Footer",
+                "block": "Form"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "partType",
+            "graphql_non_null": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_697e25815587e",
+            "label": "Block Builder",
+            "name": "block_builder",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_697e24915587b",
+                        "operator": "==contains",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_697e25847ba4d": {
+                    "key": "layout_697e25847ba4d",
+                    "name": "form",
+                    "label": "Form",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_697e7902d4abe",
+                            "label": "Form Config",
+                            "name": "form_config",
+                            "aria-label": "",
+                            "type": "group",
+                            "instructions": "Why: In Astro, you'll write one form component. It will look at the provider. If it's formspree, it will substitute https:\/\/formspree.io\/f\/{endpoint}. If it's custom_db, it will send a POST to your \/api\/submit-form.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_697e24915587b",
+                                        "operator": "==",
+                                        "value": "block"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "formConfig",
+                            "graphql_non_null": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_697e7916d4abf",
+                                    "label": "Endpoint URL \/ Form ID",
+                                    "name": "form_id",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "For Formspree: enter the Form ID (e.g., xnqjzpqr). For Webhook: enter full URL. For Custom DB: leave empty (uses default \/api\/submit).",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "formId",
+                                    "graphql_non_null": 0
+                                },
+                                {
+                                    "key": "field_697e7920d4ac0",
+                                    "label": "Submit Button Label",
+                                    "name": "submit_button_label",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "submitButtonLabel",
+                                    "graphql_non_null": 0
+                                },
+                                {
+                                    "key": "field_697e792dd4ac1",
+                                    "label": "Success Message",
+                                    "name": "success_message",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "successMessage",
+                                    "graphql_non_null": 0
+                                },
+                                {
+                                    "key": "field_697e82612bd57",
+                                    "label": "Provider",
+                                    "name": "provider",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "custom_db: Custom DB": "custom_db: Custom DB",
+                                        "formspree: Formspree": "formspree: Formspree",
+                                        "webhook: Webhook": "webhook: Webhook"
+                                    },
+                                    "default_value": "custom_db",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "provider",
+                                    "graphql_non_null": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0
+                                },
+                                {
+                                    "key": "field_697e831e2bd58",
+                                    "label": "Redirect after success (Optional)",
+                                    "name": "redirect_url",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Leave empty to show success message only.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "redirectUrl",
+                                    "graphql_non_null": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_697e793fd4ac2",
+                            "label": "Form Fields",
+                            "name": "form_fields",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_697e24915587b",
+                                        "operator": "==",
+                                        "value": "block"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Input",
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "formFields",
+                            "graphql_non_null": 0,
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_697e79a3d4ac3",
+                                    "label": "Input Type",
+                                    "name": "input_type",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "text": "text",
+                                        "email": "email",
+                                        "tel": "tel",
+                                        "textarea": "textarea",
+                                        "select": "select",
+                                        "checkbox": "checkbox",
+                                        "radio": "radio",
+                                        "hidden": "hidden"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "inputType",
+                                    "graphql_non_null": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_697e793fd4ac2"
+                                },
+                                {
+                                    "key": "field_697e79cdd4ac4",
+                                    "label": "Name Attribute",
+                                    "name": "name_attribute",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "key for JSON, for example user_email",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "nameAttribute",
+                                    "graphql_non_null": 0,
+                                    "parent_repeater": "field_697e793fd4ac2"
+                                },
+                                {
+                                    "key": "field_697e79ffd4ac5",
+                                    "label": "Label",
+                                    "name": "label",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Visible name",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "label",
+                                    "graphql_non_null": 0,
+                                    "parent_repeater": "field_697e793fd4ac2"
+                                },
+                                {
+                                    "key": "field_697e7a1ed4ac6",
+                                    "label": "Placeholder",
+                                    "name": "placeholder",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "placeholder",
+                                    "graphql_non_null": 0,
+                                    "parent_repeater": "field_697e793fd4ac2"
+                                },
+                                {
+                                    "key": "field_697e7a29d4ac7",
+                                    "label": "Is Required?",
+                                    "name": "is_required",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "isRequired",
+                                    "graphql_non_null": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "parent_repeater": "field_697e793fd4ac2"
+                                },
+                                {
+                                    "key": "field_697e7a36d4ac8",
+                                    "label": "Options",
+                                    "name": "options",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Select\/Radio only. Format: value : Label on a new line",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "options",
+                                    "graphql_non_null": 0,
+                                    "parent_repeater": "field_697e793fd4ac2"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "blockBuilder",
+            "graphql_non_null": 0
+        },
+        {
+            "key": "field_697e25135587c",
+            "label": "Header Layouts",
+            "name": "header_layouts",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_697e24915587b",
+                        "operator": "==contains",
+                        "value": "header"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_697e496996633": {
+                    "key": "layout_697e496996633",
+                    "name": "sticky",
+                    "label": "Sticky?",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_697e497096635",
+                            "label": "Sticky?",
+                            "name": "sticky",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "sticky",
+                            "graphql_non_null": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_697e25235226f": {
+                    "key": "layout_697e25235226f",
+                    "name": "logo",
+                    "label": "Logo",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_697e498996636",
+                            "label": "Custom Logo",
+                            "name": "custom_logo",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium",
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "customLogo"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_697e49a396637": {
+                    "key": "layout_697e49a396637",
+                    "name": "navigation",
+                    "label": "Navigation",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_697e49b696639",
+                            "label": "Menu Source",
+                            "name": "menu_source",
+                            "aria-label": "",
+                            "type": "menu",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "graphql_field_name": "menuSource",
+                            "return_format": "id",
+                            "allow_null": 0,
+                            "allow_in_bindings": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_697e4a1b3a94d": {
+                    "key": "layout_697e4a1b3a94d",
+                    "name": "action",
+                    "label": "Action",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_697e4a1e3a94f",
+                            "label": "Link",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0,
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "link",
+                            "graphql_non_null": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_697e4ab03a950": {
+                    "key": "layout_697e4ab03a950",
+                    "name": "content",
+                    "label": "Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_697e4ab43a952",
+                            "label": "Content",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "content",
+                            "graphql_non_null": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_697e7ad1a9cce": {
+                    "key": "layout_697e7ad1a9cce",
+                    "name": "search",
+                    "label": "Search",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_697e7aeba9cd0",
+                            "label": "Placeholder",
+                            "name": "placeholder",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "placeholder",
+                            "graphql_non_null": 0
+                        },
+                        {
+                            "key": "field_697e7aefa9cd1",
+                            "label": "Search Scope",
+                            "name": "search_scope",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "all": "all",
+                                "products": "products",
+                                "blog": "blog"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "searchScope",
+                            "graphql_non_null": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_697e7b21a9cd2",
+                            "label": "Show Submit Button",
+                            "name": "show_submit_button",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "show_in_graphql": 1,
+                            "graphql_description": "",
+                            "graphql_field_name": "showSubmitButton",
+                            "graphql_non_null": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "headerLayouts",
+            "graphql_non_null": 0
+        },
+        {
+            "key": "field_697e25655587d",
+            "label": "Footer Layouts",
+            "name": "footer_layouts",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_697e24915587b",
+                        "operator": "==contains",
+                        "value": "footer"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "footerLayouts",
+            "graphql_non_null": 0,
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_697e4cfb14300",
+                    "label": "Footer Column",
+                    "name": "footer_column",
+                    "aria-label": "",
+                    "type": "flexible_content",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layouts": {
+                        "layout_697e4d0058bb5": {
+                            "key": "layout_697e4d0058bb5",
+                            "name": "column_title",
+                            "label": "Column Title",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_697e4d3414301",
+                                    "label": "Column Title",
+                                    "name": "column_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "columnTitle",
+                                    "graphql_non_null": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_697e4d3a14302": {
+                            "key": "layout_697e4d3a14302",
+                            "name": "menu",
+                            "label": "Menu",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_697e4d5b14304",
+                                    "label": "Menu Source",
+                                    "name": "menu_source",
+                                    "aria-label": "",
+                                    "type": "menu",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "graphql_field_name": "menuSource",
+                                    "return_format": "id",
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_697e4d8a14305": {
+                            "key": "layout_697e4d8a14305",
+                            "name": "editor",
+                            "label": "Editor",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_697e4d9614307",
+                                    "label": "Editor",
+                                    "name": "editor",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "editor",
+                                    "graphql_non_null": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_697e4da014308": {
+                            "key": "layout_697e4da014308",
+                            "name": "form_block",
+                            "label": "Form Block",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_697e4dad1430a",
+                                    "label": "Form Block",
+                                    "name": "form_block",
+                                    "aria-label": "",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "ui-parts"
+                                    ],
+                                    "post_status": "",
+                                    "taxonomy": "",
+                                    "return_format": "object",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "bidirectional": 0,
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "formBlock",
+                                    "graphql_connection_type": "one_to_many",
+                                    "ui": 1,
+                                    "bidirectional_target": []
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_697e4dc11430b": {
+                            "key": "layout_697e4dc11430b",
+                            "name": "socials",
+                            "label": "Socials",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_697e4dce14312",
+                                    "label": "Show Icons",
+                                    "name": "show_icons",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "showIcons",
+                                    "graphql_non_null": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_697e86d2c65e0",
+                                    "label": "Social Link",
+                                    "name": "socials",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Add Row",
+                                    "show_in_graphql": 1,
+                                    "graphql_description": "",
+                                    "graphql_field_name": "repeater",
+                                    "graphql_non_null": 0,
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_697e8713c65e1",
+                                            "label": "Link",
+                                            "name": "link",
+                                            "aria-label": "",
+                                            "type": "link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "allow_in_bindings": 0,
+                                            "show_in_graphql": 1,
+                                            "graphql_description": "",
+                                            "graphql_field_name": "link",
+                                            "graphql_non_null": 0,
+                                            "parent_repeater": "field_697e86d2c65e0"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        }
+                    },
+                    "min": "",
+                    "max": "",
+                    "button_label": "Add Row",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "footerColumn",
+                    "graphql_non_null": 0,
+                    "parent_repeater": "field_697e25655587d"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "ui-parts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "uiPartBuilder",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1769901131
+}

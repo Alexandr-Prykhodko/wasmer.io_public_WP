@@ -1,0 +1,1 @@
+!function(t){t(function(){var n="lwpamf",a=t("."+n+"PluginRate");a.length&&a.on("click",".button",function(){t.ajax({url:window[n+"PluginRate"].ajaxUrl,method:"POST",data:{action:t(this).data("action")},beforeSend:function(){a.addClass(n+"PluginRate-loading")},success:function(){a.remove()}})})})}(jQuery);

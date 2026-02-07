@@ -1,0 +1,10 @@
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+.htaccess
