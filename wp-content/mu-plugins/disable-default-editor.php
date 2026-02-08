@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 /**
  * Plugin Name: Disable Default Editor with ACF Support
  * Description: Отключает стандартный редактор и оставляет только ACF поля с редактором
@@ -61,4 +61,4 @@ add_action( 'init', function() {
         }
     }
 }, 9 );
-
+ -->
